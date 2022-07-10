@@ -12,7 +12,7 @@
     "url": "https://github.com/fafayzf/fafa-git.git"
   },
   "bin": {
-    "ff": "./src/index.js"
+    "ff": "./index.js"
   },
   "keywords": [
     "git"
