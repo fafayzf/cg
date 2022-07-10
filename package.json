@@ -1,0 +1,36 @@
+{
+  "name": "fafa-git",
+  "version": "1.0.10",
+  "description": "This is the git shortcut command package",
+  "main": "index.js",
+  "scripts": {
+    "pub": "sh build/release.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fafayzf/fafa-git.git"
+  },
+  "bin": {
+    "ff": "./src/index.js"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "fafayzf",
+  "license": "MIT",
+  "devDependencies": {
+    "select-version-cli": "0.0.2"
+  },
+  "homepage": "https://github.com/fafayzf/fafa-git#readme",
+  "bugs": {
+    "url": "https://github.com/fafayzf/fafa-git/issues"
+  },
+  "dependencies": {
+    "commander": "^9.3.0",
+    "inquirer": "^8.2.0",
+    "npx-version": "^1.1.5",
+    "ora": "^5.4.1",
+    "simple-git": "^3.10.0"
+  }
+}
