@@ -25,7 +25,8 @@ then
   git push github refs/tags/v$VERSION
   git checkout dev
   git rebase master
-  git push origin dev
+  git push gitee dev
+  git push github dev
 
   if [[ $VERSION =~ "beta" ]]
   then
