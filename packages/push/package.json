@@ -1,6 +1,6 @@
 {
   "name": "@git/push",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "git push",
   "keywords": [
     "git",
@@ -33,7 +33,7 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@git/init": "^0.0.3",
+    "@git/init": "^0.0.4",
     "colors": "^1.4.0",
     "commander": "^9.3.0",
     "inquirer": "^8.2.0",

@@ -1,6 +1,6 @@
 {
   "name": "@git/pull",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "git pull shell",
   "keywords": [
     "git",
@@ -32,7 +32,7 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@git/init": "^0.0.3",
+    "@git/init": "^0.0.4",
     "colors": "^1.4.0"
   },
   "gitHead": "98d2172e290298d7a3fee22ce714a7e1ab6d9be8"
