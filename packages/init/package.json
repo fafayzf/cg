@@ -8,7 +8,7 @@
     "shell"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/init#readme",
+  "homepage": "https://github.com/fafayzf/fafa-git/tree/master/packages/init#readme",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
