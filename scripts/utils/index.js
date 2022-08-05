@@ -5,7 +5,3 @@ module.exports = simpleGit({
     console.log(`git.${ method } ${ stage } stage ${ progress }% complete`)
   }
 })
-
-
-
-

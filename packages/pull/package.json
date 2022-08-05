@@ -1,0 +1,35 @@
+{
+  "name": "@git/pull",
+  "version": "0.0.1",
+  "description": "git pull shell",
+  "keywords": [
+    "git",
+    "pull",
+    "shell"
+  ],
+  "author": "fafayzf <fafayzf@163.com>",
+  "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/pull#readme",
+  "license": "MIT",
+  "main": "lib/pull.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fafayzf/f-git.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/fafayzf/f-git/issues"
+  },
+  "dependencies": {
+    "@git/init": "^0.0.1",
+    "colors": "^1.4.0"
+  }
+}
