@@ -10,6 +10,7 @@
   "author": "fafayzf <fafayzf@163.com>",
   "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/init#readme",
   "license": "MIT",
+  "private": false,
   "main": "lib/init.js",
   "directories": {
     "lib": "lib",
@@ -31,5 +32,6 @@
   "dependencies": {
     "colors": "^1.4.0",
     "simple-git": "^3.10.0"
-  }
+  },
+  "gitHead": "37481953afa92d00227d9e32efecfdb3007613c4"
 }

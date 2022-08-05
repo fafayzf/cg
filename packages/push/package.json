@@ -10,6 +10,7 @@
   "author": "fafayzf <fafayzf@163.com>",
   "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/push#readme",
   "license": "MIT",
+  "private": false,
   "main": "lib/push.js",
   "directories": {
     "lib": "lib",
@@ -35,5 +36,6 @@
     "commander": "^9.3.0",
     "inquirer": "^8.2.0",
     "ora": "^5.4.1"
-  }
+  },
+  "gitHead": "37481953afa92d00227d9e32efecfdb3007613c4"
 }
