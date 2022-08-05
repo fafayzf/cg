@@ -1,6 +1,6 @@
 {
   "name": "fafa-git",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This is the git shortcut command package",
   "main": "index.js",
   "scripts": {
