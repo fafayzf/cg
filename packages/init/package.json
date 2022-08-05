@@ -1,5 +1,5 @@
 {
-  "name": "@git/init",
+  "name": "@f-git/init",
   "version": "0.0.4",
   "description": "git init",
   "keywords": [
@@ -36,5 +36,5 @@
     "colors": "^1.4.0",
     "simple-git": "^3.10.0"
   },
-  "gitHead": "98d2172e290298d7a3fee22ce714a7e1ab6d9be8"
+  "gitHead": "9100ebd68600c7397125906c042e79a5d4762fb8"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@git/push",
+  "name": "@f-git/push",
   "version": "0.0.4",
   "description": "git push",
   "keywords": [
@@ -33,11 +33,11 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@git/init": "^0.0.4",
+    "@f-git/init": "^0.0.4",
     "colors": "^1.4.0",
     "commander": "^9.3.0",
     "inquirer": "^8.2.0",
     "ora": "^5.4.1"
   },
-  "gitHead": "98d2172e290298d7a3fee22ce714a7e1ab6d9be8"
+  "gitHead": "9100ebd68600c7397125906c042e79a5d4762fb8"
 }
