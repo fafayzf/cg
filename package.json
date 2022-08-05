@@ -1,6 +1,6 @@
 {
-  "name": "f-git",
-  "version": "1.0.6",
+  "name": "fafa-git",
+  "version": "0.0.4",
   "description": "This is the git shortcut command package",
   "main": "index.js",
   "scripts": {
@@ -24,14 +24,13 @@
     "lerna": "^5.3.0",
     "select-version-cli": "0.0.2"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "homepage": "https://github.com/fafayzf/fafa-git#readme",
   "bugs": {
     "url": "https://github.com/fafayzf/fafa-git/issues"
   },
   "dependencies": {
+    "@f-git/pull": "file:packages/pull",
+    "@f-git/push": "file:packages/push",
     "commander": "^9.3.0"
   },
   "workspaces": [
