@@ -1,12 +1,12 @@
 {
   "name": "@git/init",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "git init",
   "keywords": [
     "git",
     "init",
     "shell"
-  ],  
+  ],
   "author": "fafayzf <fafayzf@163.com>",
   "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/init#readme",
   "license": "MIT",
