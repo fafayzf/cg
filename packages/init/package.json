@@ -27,7 +27,7 @@
     "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "node ./lib/init.js"
   },
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"

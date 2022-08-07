@@ -4,8 +4,14 @@
   "description": "This is the git shortcut command package",
   "main": "index.js",
   "scripts": {
-    "pub": "sh build/release.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example:init": "node ./examples/init.js",
+    "example:pull": "node ./examples/pull.js",
+    "example:push": "node ./examples/push.js",
+    "test": "lerna run test",
+    "test:init": "lerna run test --scope @f-git/init",
+    "test:pull": "lerna run test --scope @f-git/pull",
+    "test:push": "lerna run test --scope @f-git/push",
+    "pub": "sh build/release.sh"
   },
   "private": false,
   "repository": {
