@@ -34,9 +34,8 @@
   "dependencies": {
     "@f-git/init": "^0.0.4",
     "colors": "^1.4.0",
-    "commander": "^9.3.0",
     "inquirer": "^8.2.0",
-    "ora": "^5.4.1"
+    "ora": "5.4.1"
   },
   "gitHead": "196ad650acf41bf0fe48da99d5545d2a43b92a7c"
 }

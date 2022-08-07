@@ -10,7 +10,7 @@ const MESSAGE = {
     INPUTCOMMIT: '请输入commit内容'
 }
 
-module.exports = async () => {
+module.exports = async (remote = 'origin', branch, options) => {
     const { current, modified, not_added } = await git.status()
     if (modified.length > 0 || not_added.length > 0) {
         const choices = ([...modified, ...not_added] || []).map((item, index) => {
@@ -81,9 +81,10 @@ module.exports = async () => {
         console.log('commit complete!')
     }
 
+    branch = current || branch
     const spinner = ora(`push 至远程分支: ${colors.yellow(current)} 中...`).start()
     try {
-        await git.push(['-u', 'origin', current])
+        await git.push(remote, branch, options)
         spinner.stop()
         console.log('push complete!')
     } catch (err) {

@@ -1,6 +1,6 @@
 {
   "name": "ff-git",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "This is the git shortcut command package",
   "main": "index.js",
   "scripts": {
@@ -35,9 +35,11 @@
     "url": "https://github.com/fafayzf/fafa-git/issues"
   },
   "dependencies": {
-    "@f-git/pull": "^0.0.4",
-    "@f-git/push": "^0.0.4",
-    "commander": "^9.3.0"
+    "@f-git/pull": "file:packages/pull",
+    "@f-git/push": "file:packages/push",
+    "commander": "^9.3.0",
+    "ora": "^5.1.0",
+    "pull": "^2.1.1"
   },
   "workspaces": [
     "packages/*"

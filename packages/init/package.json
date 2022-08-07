@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
+    "ora": "5.4.1",
     "simple-git": "^3.10.0"
   },
   "gitHead": "196ad650acf41bf0fe48da99d5545d2a43b92a7c"
