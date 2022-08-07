@@ -90,7 +90,7 @@ module.exports = async (remote = 'origin', branch, options) => {
     } catch (err) {
         spinner.stop()
         if (err.message.indexOf("'git pull ...') before pushing again") > -1) {
-        console.log(`远程分支: ${colors.yellow(current)} 有最新版本，请先执行 ${colors.yellow('git pull')} 拉取最新代码至本地`)
+            console.log(`远程分支: ${colors.yellow(current)} 有最新版本，请先执行 ${colors.yellow('git pull')} 拉取最新代码至本地`)
         }
     }
 }

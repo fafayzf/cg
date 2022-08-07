@@ -7,6 +7,7 @@
     "example:init": "node ./examples/init.js",
     "example:pull": "node ./examples/pull.js",
     "example:push": "node ./examples/push.js",
+    "example:checkout": "node ./examples/checkout.js",
     "test": "lerna run test",
     "test:init": "lerna run test --scope @f-git/init",
     "test:pull": "lerna run test --scope @f-git/pull",
@@ -35,8 +36,10 @@
     "url": "https://github.com/fafayzf/fafa-git/issues"
   },
   "dependencies": {
+    "@f-git/checkout": "file:packages/checkout",
     "@f-git/pull": "file:packages/pull",
     "@f-git/push": "file:packages/push",
+    "@f-git/stash": "file:packages/stash",
     "commander": "^9.3.0",
     "ora": "^5.1.0",
     "pull": "^2.1.1"
