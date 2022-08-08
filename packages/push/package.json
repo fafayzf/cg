@@ -32,9 +32,9 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
+    "@f-git/commit": "^0.0.4",
     "@f-git/init": "^0.0.4",
     "colors": "^1.4.0",
-    "inquirer": "7.3.3",
     "ora": "5.4.1"
   },
   "gitHead": "196ad650acf41bf0fe48da99d5545d2a43b92a7c"

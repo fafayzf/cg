@@ -26,13 +26,13 @@ module.exports = async (branch, options) => {
     ])
 
     if (result.modifyType === MESSAGE.MODIFYTYPE[0]) {
-      stash()
+      await stash()
     }
     if (result.modifyType === MESSAGE.MODIFYTYPE[1]) {
-      commit()
+      await commit()
     }
   }
-  branch = current || branch
+  branch = branch || current
   try {
     await git.checkout(branch, options)
   } catch (err) {
