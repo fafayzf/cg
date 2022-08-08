@@ -9,16 +9,22 @@ const commit = require('@f-git/commit')
 const { program } = require('commander')
 const stash = require('@f-git/stash')
 
-// 这样输出-V或--version就能看到版本号了
 program.version(packageConfig.version)
 
-// 使用zhizu init my
+// push
 program
   .command('ph')
   .action(() => {
     push()
-  });
+  })
 
+program
+  .command('push')
+  .action(() => {
+    push()
+  })
+
+// pull
 program
   .command('pl')
   .action(() => {
@@ -26,11 +32,25 @@ program
   })
 
 program
-  .command('co [branch]')
+  .command('pull')
+  .action(() => {
+    pull()
+  })
+
+// checkout
+program
+  .command('ck [branch]')
   .action((branch, options) => {
     checkout(branch)
   })
 
+program
+  .command('checkout [branch]')
+  .action((branch, options) => {
+    checkout(branch)
+  })
+
+// commit
 program
   .command('cm')
   .action(() => {
@@ -38,11 +58,24 @@ program
   })
 
 program
+  .command('commit')
+  .action(() => {
+    commit()
+  })
+
+// stash
+program
   .command('s [pop]')
   .action((pop) => {
     pop = pop === 'pop' || pop === 'p' ? 'pop' : undefined
     stash(pop)
   })
-// program.option('-ig,--initgit', 'init git');
+
+program
+  .command('stash [pop]')
+  .action((pop) => {
+    pop = pop === 'pop' || pop === 'p' ? 'pop' : undefined
+    stash(pop)
+  })
 
 program.parse(process.argv)
