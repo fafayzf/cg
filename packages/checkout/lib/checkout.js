@@ -1,8 +1,9 @@
 const inquirer = require('inquirer')
-const git = require('@f-git/init')
+const init = require('@f-git/init')
 const commit = require('@f-git/commit')
 const stash = require('@f-git/stash')
 const colors = require('colors')
+const git = init()
 
 const MESSAGE = {
     MODIFIED: '本地有新增或者变动的文件，请选择暂存或提交',
@@ -13,8 +14,9 @@ const MESSAGE = {
 }
 
 module.exports = async (branch, options) => {
+
   const { current, modified, not_added } = await git.status()
-  console.log(current, modified, not_added);
+
   if (modified.length > 0 || not_added.length > 0) {
     const result = await inquirer.prompt([
       {

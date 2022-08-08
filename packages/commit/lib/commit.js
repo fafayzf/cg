@@ -1,5 +1,6 @@
-const git = require('@f-git/init')
+const init = require('@f-git/init')
 const inquirer = require('inquirer')
+const git = init()
 
 const MESSAGE = {
   ADDCONFIRM: '是否add全部文件',
@@ -8,8 +9,8 @@ const MESSAGE = {
   INPUTCOMMIT: '请输入commit内容'
 }
 
-
 const commit = async () => {
+
   const {
     modified,
     not_added

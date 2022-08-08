@@ -4,8 +4,15 @@
 
 ## Usage
 
-```
+```js
 const commit = require('commit');
 
-// TODO: DEMONSTRATE API
+
+commit()
+
+// or
+
+(async () => {
+  await commit()
+})()
 ```

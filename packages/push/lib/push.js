@@ -1,12 +1,12 @@
-const git = require('@f-git/init')
+const init = require('@f-git/init')
 const commit = require('@f-git/commit')
 const ora = require('ora')
 const colors = require('colors')
+const git = init()
 
 module.exports = async (remote = 'origin', branch, options) => {
     const { current, modified, not_added } = await git.status()
     if (modified.length > 0 || not_added.length > 0) {
-        console.log(123)
         await commit()
     }
     

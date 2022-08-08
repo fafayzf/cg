@@ -1,6 +1,7 @@
-const git = require('@f-git/init')
+const init = require('@f-git/init')
 const colors = require('colors')
 const ora = require('ora')
+const git = init()
 
 module.exports = async (remote = 'origin', branch, options) => {
   const { current } = await git.status()

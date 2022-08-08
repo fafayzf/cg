@@ -4,8 +4,19 @@
 
 ## Usage
 
-```
-const init = require('init');
+```js
+const init = require('@f-git/init')
 
-// TODO: DEMONSTRATE API
+const git = init({
+  baseDir: process.cwd(),
+  binary: 'git',
+});
+
+(async () => {
+ const log = await git.log()
+ const status = await git.status()
+
+ console.log(log)
+ console.log(status)
+})()
 ```

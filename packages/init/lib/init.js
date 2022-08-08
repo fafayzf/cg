@@ -1,6 +1,7 @@
 const simpleGit = require('simple-git')
 
-const git = simpleGit({
+module.exports = (options) => simpleGit({
+  ...options,
   progress({
     method,
     stage,
@@ -9,5 +10,3 @@ const git = simpleGit({
     console.log(`git.${ method } ${ stage } stage ${ progress }% complete`)
   }
 })
-
-module.exports = git

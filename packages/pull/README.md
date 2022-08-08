@@ -4,8 +4,8 @@
 
 ## Usage
 
-```
-const pull = require('pull');
+```js
+const pull = require('@f-git/pull');
 
-// TODO: DEMONSTRATE API
+pull()
 ```

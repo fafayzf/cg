@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@f-git/checkout": "file:packages/checkout",
+    "@f-git/init": "file:packages/init",
     "@f-git/pull": "file:packages/pull",
     "@f-git/push": "file:packages/push",
     "@f-git/stash": "file:packages/stash",

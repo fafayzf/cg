@@ -4,8 +4,13 @@
 
 ## Usage
 
-```
+```js
 const stash = require('stash');
 
-// TODO: DEMONSTRATE API
+stash()
+
+// git stash pop
+stash('pop')
+// or
+stash('p')
 ```

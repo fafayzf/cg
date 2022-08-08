@@ -1,5 +1,6 @@
-const git = require('@f-git/init')
+const init = require('@f-git/init')
 const colors = require('colors')
+const git = init()
 
 module.exports = async (options) => {
   try {

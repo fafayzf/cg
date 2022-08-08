@@ -4,8 +4,14 @@
 
 ## Usage
 
-```
-const checkout = require('checkout');
+```js
+const checkout = require('@f-git/checkout');
 
-// TODO: DEMONSTRATE API
+checkout('dev')
+
+// or
+
+(async () => {
+  await checkout('dev')
+})()
 ```

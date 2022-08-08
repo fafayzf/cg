@@ -4,8 +4,8 @@
 
 ## Usage
 
-```
+```js
 const push = require('push');
 
-// TODO: DEMONSTRATE API
+push()
 ```
