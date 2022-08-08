@@ -1,3 +1,3 @@
 const checkout = require('@f-git/checkout')
 
-checkout()
+checkout('dev')
