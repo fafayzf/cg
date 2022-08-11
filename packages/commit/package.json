@@ -7,7 +7,7 @@
     "commit"
   ],
   "author": "shijianjun <shijianjun@zhizukj.com>",
-  "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/commit#readme",
+  "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/commit#readme",
   "license": "MIT",
   "main": "lib/commit.js",
   "publishConfig": {

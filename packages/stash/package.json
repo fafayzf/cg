@@ -7,7 +7,7 @@
     "stash"
   ],
   "author": "shijianjun <shijianjun@zhizukj.com>",
-  "homepage": "https://github.com/fafayzf/fafa-git/tree/main/packages/stash#readme",
+  "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/stash#readme",
   "license": "MIT",
   "main": "lib/stash.js",
   "publishConfig": {
