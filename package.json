@@ -25,7 +25,7 @@
   "keywords": [
     "git"
   ],
-  "author": "fafayzf",
+  "author": "fafayzf <fafayzf@163.com>",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^5.3.0",

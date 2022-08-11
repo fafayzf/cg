@@ -6,7 +6,7 @@
     "git",
     "commit"
   ],
-  "author": "shijianjun <shijianjun@zhizukj.com>",
+  "author": "fafayzf <fafayzf@163.com>",
   "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/commit#readme",
   "license": "MIT",
   "main": "lib/commit.js",
