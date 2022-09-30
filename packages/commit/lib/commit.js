@@ -5,8 +5,9 @@ const git = init()
 const MESSAGE = {
   ADDCONFIRM: '是否add全部文件',
   ADDCHOOSEFILES: '请选择add的文件',
-  SELECTCOMMITTYPE: '请选择commit类型?',
-  INPUTCOMMIT: '请输入commit内容'
+  SELECTCOMMITTYPE: '请选择commit类型(type)?',
+  ADDCOMMITSCOPE: '请输入commit的修改范围(scope); 若无, 按enter键跳过',
+  INPUTCOMMIT: '请输入commit内容(description)'
 }
 
 const commit = async () => {
@@ -69,7 +70,12 @@ const commit = async () => {
       },
       {
         type: 'input',
-        name: 'commit',
+        name: 'commitScope',
+        message: MESSAGE.ADDCOMMITSCOPE
+      },
+      {
+        type: 'input',
+        name: 'commitDesc',
         message: MESSAGE.INPUTCOMMIT,
       },
     ])
@@ -77,7 +83,11 @@ const commit = async () => {
     await git.add(addFiles.name)
     console.log('add complete!')
 
-    await git.commit(`${result.commitType}: ${result.commit}`)
+    const commitContent = result.commitScope 
+      ? `${result.commitType}(${result.commitScope}): ${result.commitDesc}`
+      : `${result.commitType}: ${result.commitDesc}`
+    console.log(commitContent)
+    await git.commit(commitContent)
     console.log('commit complete!')
   }
 
