@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
   },
-  "gitHead": "a88fc05e994ab561a040780db6954758fd47eb84"
+  "gitHead": "a88fc05e994ab561a040780db6954758fd47eb84",
+  "dependencies": {
+    "@f-git/commit": "^0.1.0"
+  }
 }

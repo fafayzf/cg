@@ -41,6 +41,7 @@
     "@f-git/pull": "file:packages/pull",
     "@f-git/push": "file:packages/push",
     "@f-git/stash": "file:packages/stash",
+    "@f-git/commit": "file:packages/commit",
     "commander": "^9.3.0",
     "ora": "^5.1.0",
     "pull": "^2.1.1"

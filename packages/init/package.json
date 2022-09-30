@@ -33,6 +33,7 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
+    "@f-git/commit": "^0.1.0",
     "colors": "^1.4.0",
     "inquirer": "7.3.3",
     "ora": "5.4.1",
