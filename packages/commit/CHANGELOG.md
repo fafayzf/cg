@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/fafayzf/f-git/compare/v1.0.0...v0.4.0) (2022-10-12)
+
+
+### Features
+
+* add 'build, test, pref, refactor, revert' ([96a54b9](https://github.com/fafayzf/f-git/commit/96a54b9f8d8fea64588d339387432c142960dc6a))
+
+
+
+
+
+
 # [0.3.0](https://github.com/fafayzf/f-git/compare/v0.2.2...v0.3.0) (2022-09-30)
 
 **Note:** Version bump only for package @f-git/commit

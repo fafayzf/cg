@@ -1,6 +1,6 @@
 {
   "name": "@f-git/checkout",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "git checkout",
   "keywords": [
     "git",
@@ -32,8 +32,8 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@f-git/commit": "0.3.0",
-    "@f-git/init": "0.3.0",
+    "@f-git/commit": "0.4.0",
+    "@f-git/init": "0.4.0",
     "inquirer": "7.3.3",
     "ora": "5.4.1"
   },
