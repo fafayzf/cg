@@ -59,13 +59,18 @@ const commit = async () => {
         name: 'commitType',
         message: MESSAGE.SELECTCOMMITTYPE,
         choices: [
-          'fix',
           'feat',
+          'fix',
           'merge',
-          'update',
           'style',
           'docs',
-          'chore'
+          'build',
+          'chore',
+          'test',
+          'update',
+          'pref',
+          'refactor',
+          'revert',
         ],
       },
       {
