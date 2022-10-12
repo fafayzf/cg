@@ -1,6 +1,6 @@
 {
   "name": "ff-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is the git shortcut command package",
   "main": "index.js",
   "scripts": {
