@@ -4,7 +4,7 @@
 
 ```sh
 
-npm i ff-git -g
+npm i fcg -g
 
 ```
 
@@ -75,6 +75,6 @@ ff stash pop
 | @f-git/init          |[https://github.com/fafayzf/f-git/blob/master/packages/init/README.md](https://github.com/fafayzf/f-git/blob/master/packages/init/README.md)|
 | @f-git/pull          |[https://github.com/fafayzf/f-git/blob/master/packages/pull/README.md](https://github.com/fafayzf/f-git/blob/master/packages/pull/README.md)|
 | @f-git/push          |[https://github.com/fafayzf/f-git/blob/master/packages/push/README.md](https://github.com/fafayzf/f-git/blob/master/packages/push/README.md)|
-| @f-git/commit        |[https://github.com/fafayzf/f-git/blob/master/packages/commit/README.md](https://github.com/fafayzf/f-git/blob/master/packages/commit/README.md)|
+| @cf-git/g/commit        |[https://github.com/fafayzf/f-git/blob/master/packages/commit/README.md](https://github.com/fafayzf/f-git/blob/master/packages/commit/README.md)|
 | @f-git/checkout      |[https://github.com/fafayzf/f-git/blob/master/packages/checkout/README.md](https://github.com/fafayzf/f-git/blob/master/packages/checkout/README.md)|
 | @f-git/stash         |[https://github.com/fafayzf/f-git/blob/master/packages/stash/README.md](https://github.com/fafayzf/f-git/blob/master/packages/stash/README.md)|

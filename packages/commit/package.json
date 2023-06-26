@@ -7,31 +7,38 @@
     "commit"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/commit#readme",
+  "homepage": "https://github.com/fafayzf/cg/tree/main/packages/commit#readme",
   "license": "MIT",
-  "main": "lib/commit.js",
+  "main": "./dist/node/index.js",
+  "module": "./dist/node/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/node/index.d.ts",
+      "import": "./dist/node/index.js",
+      "require": "./dist/node-cjs/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "types",
+    "*.d.ts"
+  ],
   "publishConfig": {
     "access": "public"
   },
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fafayzf/f-git.git"
+    "url": "git+https://github.com/fafayzf/cg.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "clean": "rimraf node_modules dist"
   },
   "bugs": {
-    "url": "https://github.com/fafayzf/f-git/issues"
+    "url": "https://github.com/fafayzf/cg/issues"
   },
   "dependencies": {
-    "@f-git/init": "0.4.0"
-  },
-  "gitHead": "a88fc05e994ab561a040780db6954758fd47eb84"
+    "@f-git/init": "workspace:*",
+    "inquirer": "7.3.3"
+  }
 }

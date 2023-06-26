@@ -2,42 +2,44 @@
   "name": "@f-git/init",
   "version": "0.4.0",
   "description": "git init",
+  "type": "module",
   "keywords": [
     "git",
     "init",
     "shell"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/f-git/tree/master/packages/init#readme",
+  "homepage": "https://github.com/fafayzf/cg/tree/master/packages/init#readme",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "private": false,
-  "main": "lib/init.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "main": "./dist/node/index.js",
+  "module": "./dist/node/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/node/index.d.ts",
+      "import": "./dist/node/index.js",
+      "require": "./dist/node-cjs/index.cjs"
+    }
   },
   "files": [
-    "lib"
+    "dist",
+    "types",
+    "*.d.ts"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fafayzf/f-git.git"
+    "url": "git+https://github.com/fafayzf/cg.git"
   },
   "scripts": {
-    "test": "node ./lib/init.js"
+    "clean": "rimraf node_modules dist"
   },
   "bugs": {
-    "url": "https://github.com/fafayzf/f-git/issues"
+    "url": "https://github.com/fafayzf/cg/issues"
   },
   "dependencies": {
-    "@f-git/commit": "0.4.0",
-    "colors": "^1.4.0",
-    "inquirer": "7.3.3",
-    "ora": "5.4.1",
-    "simple-git": "^3.10.0"
-  },
-  "gitHead": "196ad650acf41bf0fe48da99d5545d2a43b92a7c"
+    "simple-git": "^3.18.0"
+  }
 }
