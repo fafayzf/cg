@@ -1,6 +1,6 @@
 {
   "name": "@f-git/stash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "git stash",
   "keywords": [
     "git",
@@ -39,6 +39,7 @@
     "url": "https://github.com/fafayzf/cg/issues"
   },
   "dependencies": {
+    "@f-git/init": "workspace:*",
     "ora": "5.4.1"
   }
 }

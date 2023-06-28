@@ -1,6 +1,6 @@
 {
   "name": "f-git",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is the git shortcut command package",
   "private": true,
   "main": "./dist/node/index.js",
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "pnpm run -r --parallel clean:dist && rollup -c",
-    "pub": "pnpm build && bumpp -r && pnpm changelog && pnpm -r publish",
+    "pub": "pnpm build && bumpp -r && pnpm changelog && pnpm -r publish --no-git-checks",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "rimraf node_modules && pnpm run -r --parallel clean",
     "test": "vitest"
@@ -63,15 +63,5 @@
   "homepage": "https://github.com/fafayzf/f-git#readme",
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
-  },
-  "dependencies": {
-    "@f-git/checkout": "workspace:*",
-    "@f-git/commit": "workspace:*",
-    "@f-git/init": "workspace:*",
-    "@f-git/pull": "workspace:*",
-    "@f-git/push": "workspace:*",
-    "@f-git/stash": "workspace:*",
-    "commander": "^10.0.1",
-    "simple-git": "^3.18.0"
   }
 }

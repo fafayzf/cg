@@ -1,6 +1,6 @@
 {
   "name": "@f-git/checkout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "git checkout",
   "type": "module",
   "keywords": [
@@ -41,7 +41,11 @@
     "url": "https://github.com/fafayzf/cg/issues"
   },
   "dependencies": {
+    "@f-git/init": "workspace:*",
+    "@f-git/commit": "workspace:*",
+    "@f-git/stash": "workspace:*",
     "color": "^4.2.3",
-    "inquirer": "7.3.3"
+    "inquirer": "7.3.3",
+    "simple-git": "^3.18.0"
   }
 }

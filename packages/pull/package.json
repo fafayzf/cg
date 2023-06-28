@@ -1,6 +1,6 @@
 {
   "name": "@f-git/pull",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "git pull shell",
   "keywords": [
     "git",
@@ -40,6 +40,8 @@
     "url": "https://github.com/fafayzf/cg/issues"
   },
   "dependencies": {
-    "ora": "5.4.1"
+    "@f-git/init": "workspace:*",
+    "ora": "5.4.1",
+    "simple-git": "^3.18.0"
   }
 }
