@@ -1,6 +1,6 @@
 {
   "name": "f-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is the git shortcut command package",
   "private": true,
   "main": "./dist/node/index.js",
@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "build": "pnpm run -r --parallel clean:dist && rollup -c",
-    "pub": "bumpp -r && pnpm changelog && pnpm -r publish",
+    "pub": "pnpm build && bumpp -r && pnpm changelog && pnpm -r publish",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "rimraf node_modules && pnpm run -r --parallel clean",
     "test": "vitest"
   },
@@ -37,6 +38,8 @@
   "author": "fafayzf <fafayzf@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
@@ -51,9 +54,7 @@
     "esbuild-register": "^3.4.2",
     "fast-glob": "^3.2.12",
     "rollup": "^3.23.0",
-    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-dts": "^5.3.0",
-    "rollup-plugin-typescript": "^1.0.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4",
