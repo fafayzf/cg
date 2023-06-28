@@ -1,6 +1,6 @@
 {
   "name": "@f-git/init",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "git init",
   "type": "module",
   "keywords": [

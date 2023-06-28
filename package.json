@@ -1,7 +1,8 @@
 {
   "name": "f-git",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "This is the git shortcut command package",
+  "private": true,
   "main": "./dist/node/index.js",
   "module": "./dist/node/index.js",
   "types": "./dist/types/index.d.ts",
@@ -19,11 +20,7 @@
   ],
   "scripts": {
     "build": "pnpm run -r --parallel clean:dist && rollup -c",
-    "example:init": "node ./examples/init.js",
-    "example:pull": "node ./examples/pull.js",
-    "example:push": "node ./examples/push.js",
-    "example:checkout": "node ./examples/checkout.js",
-    "pub": "sh build/release.sh",
+    "pub": "bumpp -r && pnpm changelog && pnpm -r publish",
     "clean": "rimraf node_modules && pnpm run -r --parallel clean",
     "test": "vitest"
   },
@@ -48,6 +45,7 @@
     "@types/inquirer": "^9.0.3",
     "@types/ms": "^0.7.31",
     "@types/node": "^18.15.11",
+    "bumpp": "^9.1.1",
     "cross-env": "^7.0.3",
     "esbuild": "^0.18.9",
     "esbuild-register": "^3.4.2",

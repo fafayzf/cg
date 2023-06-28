@@ -1,6 +1,6 @@
 {
   "name": "@f-git/cli",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "git init",
   "type": "module",
   "keywords": [
@@ -43,6 +43,5 @@
   "bugs": {
     "url": "https://github.com/fafayzf/cg/issues"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
