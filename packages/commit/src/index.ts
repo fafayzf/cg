@@ -1,4 +1,4 @@
-import { init } from '@f-git/init'
+import init from '@f-git/init'
 import inquirer from 'inquirer'
 const git = init()
 

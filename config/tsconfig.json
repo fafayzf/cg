@@ -1,33 +1,29 @@
 {
-    "compilerOptions": {
-      "target": "ES2020",
-      "module": "ESNext",
-      "moduleResolution": "node",
-      "strict": true,
-      "declaration": true,
-      "noImplicitOverride": true,
-      "noUnusedLocals": true,
-      "esModuleInterop": true,
-      // "declarationDir": "./types",
-      "rootDir": "./src",
-      "useUnknownInCatchVariables": false,
-      "paths": {
-        "@f-git/init": ["./packages/init/src/*"],
-        "@f-git/checkout": ["./packages/checkout/src/*"],
-        "@f-git/commit": ["./packages/commit/src/*"],
-        "@f-git/pull": ["./packages/pull/src/*"],
-        "@f-git/push": ["./packages/push/src/*"],
-        "@f-git/stash": ["./packages/stash/src/*"]
-      }
-    },
-    "include": [
-      "./packages",
-      "./examples"
-    ],
-    "exclude": [
-      "**/test/**",
-      "**/__tests__/**",
-      "**/dist"
-    ],
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "@f-git/init": ["../packages/init/src/index.ts"],
+      "@f-git/checkout": ["../packages/checkout/src/index.ts"],
+      "@f-git/commit": ["../packages/commit/src/index.ts"],
+      "@f-git/pull": ["../packages/pull/src/index.ts"],
+      "@f-git/push": ["../packages/push/src/index.ts"],
+      "@f-git/stash": ["../packages/stash/src/index.ts"]
+    }
+  },
+  "include": [
+    "../packages",
+    "../vitest.config.ts"
+  ],
+  "exclude": [
+    "**/__tests__/**"
+  ],
 }
-  

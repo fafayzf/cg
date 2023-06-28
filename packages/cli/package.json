@@ -1,14 +1,19 @@
 {
-  "name": "@f-git/commit",
+  "name": "@f-git/cli",
   "version": "0.4.0",
-  "description": "git commit",
+  "description": "git init",
+  "type": "module",
   "keywords": [
     "git",
-    "commit"
+    "init",
+    "shell"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/cg/tree/main/packages/commit#readme",
+  "homepage": "https://github.com/fafayzf/cg/tree/master/packages/init#readme",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -24,8 +29,8 @@
     "types",
     "*.d.ts"
   ],
-  "publishConfig": {
-    "access": "public"
+  "bin": {
+    "cg": "./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -39,6 +44,5 @@
     "url": "https://github.com/fafayzf/cg/issues"
   },
   "dependencies": {
-    "inquirer": "7.3.3"
   }
 }

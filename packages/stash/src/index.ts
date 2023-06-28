@@ -1,4 +1,5 @@
-import init, { TaskOptions } from '@f-git/init'
+import init from '@f-git/init'
+import { TaskOptions } from 'simple-git'
 const git = init()
 
 export default async function (options?: TaskOptions) {

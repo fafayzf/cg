@@ -18,7 +18,7 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "pnpm run -r --parallel clean:dist && rollup -c",
     "example:init": "node ./examples/init.js",
     "example:pull": "node ./examples/pull.js",
     "example:push": "node ./examples/push.js",
@@ -32,7 +32,7 @@
     "url": "https://github.com/fafayzf/cg.git"
   },
   "bin": {
-    "cg": "./index.js"
+    "cg": "./index.ts"
   },
   "keywords": [
     "git"
@@ -55,7 +55,6 @@
     "rollup": "^3.23.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-dts": "^5.3.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript": "^1.0.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
@@ -69,9 +68,11 @@
   "dependencies": {
     "@f-git/checkout": "workspace:*",
     "@f-git/commit": "workspace:*",
+    "@f-git/init": "workspace:*",
     "@f-git/pull": "workspace:*",
     "@f-git/push": "workspace:*",
     "@f-git/stash": "workspace:*",
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "simple-git": "^3.18.0"
   }
 }

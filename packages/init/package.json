@@ -14,14 +14,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/node/index.js",
-  "module": "./dist/node/index.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/node/index.d.ts",
-      "import": "./dist/node/index.js",
-      "require": "./dist/node-cjs/index.cjs"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -34,7 +34,8 @@
     "url": "git+https://github.com/fafayzf/cg.git"
   },
   "scripts": {
-    "clean": "rimraf node_modules dist"
+    "clean:dist": "rimraf dist",
+    "clean": "rimraf node_modules && pnpm clean:dist"
   },
   "bugs": {
     "url": "https://github.com/fafayzf/cg/issues"

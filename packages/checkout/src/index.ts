@@ -1,5 +1,6 @@
 import inquirer from 'inquirer'
-import { init, TaskOptions } from '@f-git/init'
+import init from '@f-git/init'
+import { TaskOptions } from 'simple-git'
 import commit from '@f-git/commit'
 import stash from '@f-git/stash'
 import Colors from 'color'
@@ -13,7 +14,7 @@ const MESSAGE = {
     ]
 }
 
-export default async (branch: string, options: TaskOptions) => {
+export default async (branch?: string, options?: TaskOptions) => {
 
   const { current, modified, not_added } = await git.status()
 
