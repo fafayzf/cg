@@ -1,6 +1,6 @@
 {
   "name": "f-git",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is the git shortcut command package",
   "private": true,
   "main": "./dist/node/index.js",
