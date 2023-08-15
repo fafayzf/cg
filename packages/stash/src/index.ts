@@ -1,8 +1,8 @@
-import init from '@f-git/init'
+import { init } from '@f-git/init'
 import { TaskOptions } from 'simple-git'
 const git = init()
 
-export default async function (options?: TaskOptions) {
+async function stash(options?: TaskOptions) {
   try {
     await git.stash(options)
     console.log('stash complete!')
@@ -10,3 +10,6 @@ export default async function (options?: TaskOptions) {
     console.error(err.message)
   }
 }
+
+export { stash }
+export default stash

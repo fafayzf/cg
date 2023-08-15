@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 import pkg from '../package.json'
-import push from '@f-git/push'
-import pull from '@f-git/pull'
-import commit from '@f-git/commit'
-import checkout from '@f-git/checkout'
+import { push } from '@f-git/push'
+import { pull } from '@f-git/pull'
+import { commit } from '@f-git/commit'
+import { checkout } from '@f-git/checkout'
 import { program } from 'commander'
-import stash from '@f-git/stash'
+import { stash } from '@f-git/stash'
 
 program.version(pkg.version)
 

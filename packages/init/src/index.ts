@@ -2,7 +2,7 @@ import { simpleGit, CleanOptions, Options, TaskOptions } from 'simple-git'
 simpleGit().clean(CleanOptions.FORCE)
 
 
-export default (options?: Options) => {
+function init (options?: Options) {
   return simpleGit({
     ...options,
     progress({
@@ -15,4 +15,5 @@ export default (options?: Options) => {
   })
 }
 
-export { simpleGit, CleanOptions, Options, TaskOptions }
+export { simpleGit, CleanOptions, Options, TaskOptions, init }
+export default init

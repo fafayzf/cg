@@ -1,8 +1,8 @@
 import inquirer from 'inquirer'
-import init from '@f-git/init'
+import { init } from '@f-git/init'
 import { TaskOptions } from 'simple-git'
-import commit from '@f-git/commit'
-import stash from '@f-git/stash'
+import { commit } from '@f-git/commit'
+import { stash } from '@f-git/stash'
 import Colors from 'color'
 const git = init()
 
@@ -14,7 +14,7 @@ const MESSAGE = {
     ]
 }
 
-export default async (branch?: string, options?: TaskOptions) => {
+async function checkout(branch?: string, options?: TaskOptions) {
 
   const { current, modified, not_added } = await git.status()
 
@@ -42,3 +42,8 @@ export default async (branch?: string, options?: TaskOptions) => {
     console.log(new Colors().red(err.message))
   }
 } 
+
+
+
+export { checkout }
+export default checkout

@@ -1,4 +1,4 @@
-import init from '@f-git/init'
+import { init } from '@f-git/init'
 import inquirer from 'inquirer'
 const git = init()
 
@@ -10,7 +10,7 @@ const MESSAGE = {
   INPUTCOMMIT: '请输入commit内容(description)'
 }
 
-export default async () => {
+async function commit() {
 
   const {
     modified,
@@ -97,3 +97,6 @@ export default async () => {
   }
 
 }
+
+export { commit }
+export default commit

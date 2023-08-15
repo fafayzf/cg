@@ -1,9 +1,9 @@
-import init from '@f-git/init'
+import { init } from '@f-git/init'
 import { TaskOptions } from 'simple-git'
 import ora from 'ora'
 const git = init()
 
-export default async (remote = 'origin', branch?: string, options?: TaskOptions) => {
+async function pull(remote = 'origin', branch?: string, options?: TaskOptions) {
   const { current } = await git.status()
   branch = (branch || current) as string
 
@@ -18,3 +18,6 @@ export default async (remote = 'origin', branch?: string, options?: TaskOptions)
     console.error(err.message)
   }
 }
+
+export { pull }
+export default pull

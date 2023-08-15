@@ -1,7 +1,11 @@
 # `checkout`
 
 > TODO: description
+```sh
 
+pnpm install @f-git/checkout
+
+```
 ## Usage
 
 ```js

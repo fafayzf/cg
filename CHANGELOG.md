@@ -1,3 +1,33 @@
+## [1.0.2](https://github.com/fafayzf/cg/compare/v0.4.0...v1.0.2) (2023-06-28)
+
+
+### Features
+
+* **cli:** add @ff-git/cli ([5b67fec](https://github.com/fafayzf/cg/commit/5b67fec8d009a7dacf032caef0e11dfd8edf1717))
+* **global:** 重构 ([b7c22a3](https://github.com/fafayzf/cg/commit/b7c22a317b7b0811dcc208253d3baf0a666e2000))
+
+
+
+## [1.0.1](https://github.com/fafayzf/cg/compare/v0.4.0...v1.0.1) (2023-06-28)
+
+
+### Features
+
+* **cli:** add @ff-git/cli ([5b67fec](https://github.com/fafayzf/cg/commit/5b67fec8d009a7dacf032caef0e11dfd8edf1717))
+* **global:** 重构 ([b7c22a3](https://github.com/fafayzf/cg/commit/b7c22a317b7b0811dcc208253d3baf0a666e2000))
+
+
+
+# [1.0.0](https://github.com/fafayzf/cg/compare/v0.4.0...v1.0.0) (2023-06-28)
+
+
+### Features
+
+* **cli:** add @ff-git/cli ([5b67fec](https://github.com/fafayzf/cg/commit/5b67fec8d009a7dacf032caef0e11dfd8edf1717))
+* **global:** 重构 ([b7c22a3](https://github.com/fafayzf/cg/commit/b7c22a317b7b0811dcc208253d3baf0a666e2000))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

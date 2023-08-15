@@ -1,10 +1,10 @@
-import init from '@f-git/init'
+import { init } from '@f-git/init'
 import { TaskOptions } from 'simple-git'
-import commit from '@f-git/commit'
+import { commit } from '@f-git/commit'
 import ora from 'ora'
 const git = init()
 
-export default async (remote = 'origin', branch?: string, options?: TaskOptions) => {
+async function push (remote = 'origin', branch?: string, options?: TaskOptions) {
     const { current, modified, not_added } = await git.status()
     if (modified.length > 0 || not_added.length > 0) {
         await commit()
@@ -24,3 +24,6 @@ export default async (remote = 'origin', branch?: string, options?: TaskOptions)
     }
 }
 
+
+export { push }
+export default push
