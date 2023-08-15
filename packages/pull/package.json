@@ -1,6 +1,6 @@
 {
   "name": "@f-git/pull",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "git pull shell",
   "keywords": [
     "git",

@@ -1,6 +1,6 @@
 {
   "name": "@f-git/cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "git init",
   "keywords": [
     "git",
@@ -40,7 +40,8 @@
     "push": "pnpm ff push",
     "clean:dist": "rimraf dist",
     "clean": "rimraf node_modules && pnpm clean:dist",
-    "build": "pnpm clean:dist && libuild"
+    "build": "pnpm clean:dist && libuild",
+    "dev": "pnpm build -w"
   },
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
@@ -54,6 +55,7 @@
     "commander": "^10.0.1"
   },
   "devDependencies": {
+    "@types/node": "^20.5.0",
     "typescript": "^5.0.4"
   }
 }

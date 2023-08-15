@@ -1,6 +1,6 @@
 {
   "name": "@f-git/commit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "git commit",
   "keywords": [
     "git",
@@ -40,6 +40,7 @@
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
+    "@f-git/init": "workspace:*",
     "inquirer": "7.3.3"
   },
   "devDependencies": {
