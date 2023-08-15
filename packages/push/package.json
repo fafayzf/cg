@@ -1,6 +1,6 @@
 {
   "name": "@f-git/push",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "git push",
   "keywords": [
     "git",
@@ -8,19 +8,19 @@
     "shell"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/cg/tree/master/packages/push#readme",
+  "homepage": "https://github.com/fafayzf/f-git/tree/master/packages/push#readme",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/node-cjs/f-git-push.cjs",
+  "module": "./dist/node/f-git-push.js",
+  "types": "./dist/types/f-git-push.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "types": "./dist/types/f-git-push.d.ts",
+      "import": "./dist/node/f-git-push.js",
+      "require": "./dist/node-cjs/f-git-push.cjs"
     }
   },
   "files": [
@@ -30,19 +30,23 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fafayzf/cg.git"
+    "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
     "clean:dist": "rimraf dist",
-    "clean": "rimraf node_modules && pnpm clean:dist"
+    "clean": "rimraf node_modules && pnpm clean:dist",
+    "build": "pnpm clean:dist && libuild"
   },
   "bugs": {
-    "url": "https://github.com/fafayzf/cg/issues"
+    "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
     "@f-git/commit": "workspace:*",
     "@f-git/init": "workspace:*",
     "ora": "5.4.1",
     "simple-git": "^3.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }

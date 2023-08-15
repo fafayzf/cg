@@ -1,24 +1,24 @@
 {
   "name": "@f-git/checkout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "git checkout",
   "type": "module",
   "keywords": [
     "git",
     "checkout",
-    "cg"
+    "ff"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/cg/tree/main/packages/checkout#readme",
+  "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/checkout#readme",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/node-cjs/f-git-checkout.cjs",
+  "module": "./dist/node/f-git-checkout.js",
+  "types": "./dist/types/f-git-checkout.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "types": "./dist/types/f-git-checkout.d.ts",
+      "import": "./dist/node/f-git-checkout.js",
+      "require": "./dist/node-cjs/f-git-checkout.cjs"
     }
   },
   "files": [
@@ -31,21 +31,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fafayzf/cg.git"
+    "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
     "clean:dist": "rimraf dist",
-    "clean": "rimraf node_modules && pnpm clean:dist"
+    "clean": "rimraf node_modules && pnpm clean:dist",
+    "build": "pnpm clean:dist && libuild"
   },
   "bugs": {
-    "url": "https://github.com/fafayzf/cg/issues"
+    "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@f-git/init": "workspace:*",
     "@f-git/commit": "workspace:*",
+    "@f-git/init": "workspace:*",
     "@f-git/stash": "workspace:*",
     "color": "^4.2.3",
     "inquirer": "7.3.3",
     "simple-git": "^3.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }

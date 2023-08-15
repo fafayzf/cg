@@ -1,6 +1,6 @@
 {
   "name": "f-git",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is the git shortcut command package",
   "private": true,
   "main": "./dist/node/index.js",
@@ -19,7 +19,7 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "pnpm run -r --parallel clean:dist && rollup -c",
+    "build": "pnpm run -r --parallel build",
     "pub": "pnpm build && bumpp -r && pnpm changelog && pnpm -r publish --no-git-checks",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "rimraf node_modules && pnpm run -r --parallel clean",
@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fafayzf/cg.git"
+    "url": "https://github.com/fafayzf/f-git.git"
   },
   "bin": {
-    "cg": "./index.ts"
+    "ff": "./index.ts"
   },
   "keywords": [
     "git"
@@ -40,23 +40,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "@rollup/plugin-commonjs": "^25.0.0",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.2",
-    "@rollup/plugin-typescript": "^11.1.1",
     "@types/color": "^3.0.3",
     "@types/inquirer": "^9.0.3",
-    "@types/ms": "^0.7.31",
-    "@types/node": "^18.15.11",
+    "@yzfu/libuild": "^1.0.5",
     "bumpp": "^9.1.1",
-    "cross-env": "^7.0.3",
-    "esbuild": "^0.18.9",
-    "esbuild-register": "^3.4.2",
-    "fast-glob": "^3.2.12",
-    "rollup": "^3.23.0",
-    "rollup-plugin-dts": "^5.3.0",
-    "ts-node": "^10.9.1",
-    "tslib": "^2.5.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
   },

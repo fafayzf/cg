@@ -1,22 +1,22 @@
 {
   "name": "@f-git/commit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "git commit",
   "keywords": [
     "git",
     "commit"
   ],
   "author": "fafayzf <fafayzf@163.com>",
-  "homepage": "https://github.com/fafayzf/cg/tree/main/packages/commit#readme",
+  "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/commit#readme",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/node-cjs/f-git-commit.cjs",
+  "module": "./dist/node/f-git-commit.js",
+  "types": "./dist/types/f-git-commit.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "types": "./dist/types/f-git-commit.d.ts",
+      "import": "./dist/node/f-git-commit.js",
+      "require": "./dist/node-cjs/f-git-commit.cjs"
     }
   },
   "files": [
@@ -29,16 +29,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fafayzf/cg.git"
+    "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
     "clean:dist": "rimraf dist",
-    "clean": "rimraf node_modules && pnpm clean:dist"
+    "clean": "rimraf node_modules && pnpm clean:dist",
+    "build": "pnpm clean:dist && libuild"
   },
   "bugs": {
-    "url": "https://github.com/fafayzf/cg/issues"
+    "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
     "inquirer": "7.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
