@@ -1,6 +1,6 @@
 {
   "name": "f-git",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is the git shortcut command package",
   "private": true,
   "main": "./dist/node/index.js",
@@ -42,7 +42,7 @@
     "@commitlint/config-conventional": "^17.6.6",
     "@types/color": "^3.0.3",
     "@types/inquirer": "^9.0.3",
-    "@yzfu/libuild": "^1.0.5",
+    "@yzfu/libuild": "^1.0.6",
     "bumpp": "^9.1.1",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
