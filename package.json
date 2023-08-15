@@ -1,26 +1,36 @@
 {
-  "name": "ff-git",
-  "version": "1.0.2",
+  "name": "f-git",
+  "version": "1.0.8",
   "description": "This is the git shortcut command package",
-  "main": "index.js",
-  "scripts": {
-    "example:init": "node ./examples/init.js",
-    "example:pull": "node ./examples/pull.js",
-    "example:push": "node ./examples/push.js",
-    "example:checkout": "node ./examples/checkout.js",
-    "test": "lerna run test",
-    "test:init": "lerna run test --scope @f-git/init",
-    "test:pull": "lerna run test --scope @f-git/pull",
-    "test:push": "lerna run test --scope @f-git/push",
-    "pub": "sh build/release.sh"
+  "private": true,
+  "main": "./dist/node/index.js",
+  "module": "./dist/node/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/node/index.d.ts",
+      "import": "./dist/node/index.js",
+      "require": "./dist/node-cjs/index.cjs"
+    }
   },
-  "private": false,
+  "files": [
+    "dist",
+    "types",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "pnpm run -r --parallel build",
+    "pub": "pnpm build && bumpp -r && pnpm changelog && pnpm -r publish --no-git-checks",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "clean": "rimraf node_modules && pnpm run -r --parallel clean",
+    "test": "vitest"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/fafayzf/f-git.git"
   },
   "bin": {
-    "ff": "./index.js"
+    "ff": "./index.ts"
   },
   "keywords": [
     "git"
@@ -28,25 +38,17 @@
   "author": "fafayzf <fafayzf@163.com>",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^5.3.0",
-    "select-version-cli": "0.0.2"
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@types/color": "^3.0.3",
+    "@types/inquirer": "^9.0.3",
+    "@yzfu/libuild": "^1.0.6",
+    "bumpp": "^9.1.1",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
   },
   "homepage": "https://github.com/fafayzf/f-git#readme",
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
-  },
-  "dependencies": {
-    "@f-git/checkout": "file:packages/checkout",
-    "@f-git/init": "file:packages/init",
-    "@f-git/pull": "file:packages/pull",
-    "@f-git/push": "file:packages/push",
-    "@f-git/stash": "file:packages/stash",
-    "@f-git/commit": "file:packages/commit",
-    "commander": "^9.3.0",
-    "ora": "^5.1.0",
-    "pull": "^2.1.1"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }

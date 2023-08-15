@@ -1,6 +1,6 @@
 {
   "name": "@f-git/commit",
-  "version": "0.4.0",
+  "version": "1.0.8",
   "description": "git commit",
   "keywords": [
     "git",
@@ -9,29 +9,41 @@
   "author": "fafayzf <fafayzf@163.com>",
   "homepage": "https://github.com/fafayzf/f-git/tree/main/packages/commit#readme",
   "license": "MIT",
-  "main": "lib/commit.js",
+  "main": "./dist/node-cjs/f-git-commit.cjs",
+  "module": "./dist/node/f-git-commit.js",
+  "types": "./dist/types/f-git-commit.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/f-git-commit.d.ts",
+      "import": "./dist/node/f-git-commit.js",
+      "require": "./dist/node-cjs/f-git-commit.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "types",
+    "*.d.ts"
+  ],
   "publishConfig": {
     "access": "public"
   },
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "clean:dist": "rimraf dist",
+    "clean": "rimraf node_modules && pnpm clean:dist",
+    "build": "pnpm clean:dist && libuild"
   },
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@f-git/init": "0.4.0"
+    "@f-git/init": "workspace:*",
+    "inquirer": "7.3.3"
   },
-  "gitHead": "a88fc05e994ab561a040780db6954758fd47eb84"
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }

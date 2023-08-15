@@ -1,6 +1,6 @@
 {
   "name": "@f-git/push",
-  "version": "0.4.0",
+  "version": "1.0.8",
   "description": "git push",
   "keywords": [
     "git",
@@ -13,29 +13,40 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "lib/push.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "main": "./dist/node-cjs/f-git-push.cjs",
+  "module": "./dist/node/f-git-push.js",
+  "types": "./dist/types/f-git-push.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/f-git-push.d.ts",
+      "import": "./dist/node/f-git-push.js",
+      "require": "./dist/node-cjs/f-git-push.cjs"
+    }
   },
   "files": [
-    "lib"
+    "dist",
+    "types",
+    "*.d.ts"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
-    "test": "node ./lib/push.js"
+    "clean:dist": "rimraf dist",
+    "clean": "rimraf node_modules && pnpm clean:dist",
+    "build": "pnpm clean:dist && libuild"
   },
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "@f-git/commit": "0.4.0",
-    "@f-git/init": "0.4.0",
-    "colors": "^1.4.0",
-    "ora": "5.4.1"
+    "@f-git/commit": "workspace:*",
+    "@f-git/init": "workspace:*",
+    "ora": "5.4.1",
+    "simple-git": "^3.18.0"
   },
-  "gitHead": "196ad650acf41bf0fe48da99d5545d2a43b92a7c"
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }

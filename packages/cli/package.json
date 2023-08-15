@@ -1,8 +1,7 @@
 {
-  "name": "@f-git/init",
+  "name": "@f-git/cli",
   "version": "1.0.8",
   "description": "git init",
-  "type": "module",
   "keywords": [
     "git",
     "init",
@@ -14,14 +13,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/node-cjs/f-git-init.cjs",
-  "module": "./dist/node/f-git-init.js",
-  "types": "./dist/types/f-git-init.d.ts",
+  "main": "./dist/node-cjs/f-git-cli.cjs",
+  "module": "./dist/node/f-git-cli.js",
+  "types": "./dist/types/f-git-cli.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/types/f-git-init.d.ts",
-      "import": "./dist/node/f-git-init.js",
-      "require": "./dist/node-cjs/f-git-init.cjs"
+      "types": "./dist/types/f-git-cli.d.ts",
+      "import": "./dist/node/f-git-cli.js",
+      "require": "./dist/node-cjs/f-git-cli.cjs"
     }
   },
   "files": [
@@ -29,22 +28,34 @@
     "types",
     "*.d.ts"
   ],
+  "bin": {
+    "ff": "./dist/node-cjs/f-git-cli.cjs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fafayzf/f-git.git"
   },
   "scripts": {
+    "ff": "node ./dist/node-cjs/f-git-cli.cjs",
+    "push": "pnpm ff push",
     "clean:dist": "rimraf dist",
     "clean": "rimraf node_modules && pnpm clean:dist",
-    "build": "pnpm clean:dist && libuild"
+    "build": "pnpm clean:dist && libuild",
+    "dev": "pnpm build -w"
   },
   "bugs": {
     "url": "https://github.com/fafayzf/f-git/issues"
   },
   "dependencies": {
-    "simple-git": "^3.18.0"
+    "@f-git/checkout": "workspace:*",
+    "@f-git/commit": "workspace:*",
+    "@f-git/pull": "workspace:*",
+    "@f-git/push": "workspace:*",
+    "@f-git/stash": "workspace:*",
+    "commander": "^10.0.1"
   },
   "devDependencies": {
+    "@types/node": "^20.5.0",
     "typescript": "^5.0.4"
   }
 }

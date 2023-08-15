@@ -1,6 +1,11 @@
 # `pull`
 
 > TODO: description
+```sh
+
+pnpm install @f-git/pull
+
+```
 
 ## Usage
 

@@ -1,37 +1,67 @@
+## [1.0.2](https://github.com/fafayzf/cg/compare/v0.4.0...v1.0.2) (2023-06-28)
+
+
+### Features
+
+* **cli:** add @ff-git/cli ([5b67fec](https://github.com/fafayzf/cg/commit/5b67fec8d009a7dacf032caef0e11dfd8edf1717))
+* **global:** 重构 ([b7c22a3](https://github.com/fafayzf/cg/commit/b7c22a317b7b0811dcc208253d3baf0a666e2000))
+
+
+
+## [1.0.1](https://github.com/fafayzf/cg/compare/v0.4.0...v1.0.1) (2023-06-28)
+
+
+### Features
+
+* **cli:** add @ff-git/cli ([5b67fec](https://github.com/fafayzf/cg/commit/5b67fec8d009a7dacf032caef0e11dfd8edf1717))
+* **global:** 重构 ([b7c22a3](https://github.com/fafayzf/cg/commit/b7c22a317b7b0811dcc208253d3baf0a666e2000))
+
+
+
+# [1.0.0](https://github.com/fafayzf/cg/compare/v0.4.0...v1.0.0) (2023-06-28)
+
+
+### Features
+
+* **cli:** add @ff-git/cli ([5b67fec](https://github.com/fafayzf/cg/commit/5b67fec8d009a7dacf032caef0e11dfd8edf1717))
+* **global:** 重构 ([b7c22a3](https://github.com/fafayzf/cg/commit/b7c22a317b7b0811dcc208253d3baf0a666e2000))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.4.0](https://github.com/fafayzf/f-git/compare/v1.0.0...v0.4.0) (2022-10-12)
+# [0.4.0](https://github.com/fafayzf/cg/compare/v1.0.0...v0.4.0) (2022-10-12)
 
 
 ### Features
 
-* add 'build, test, pref, refactor, revert' ([96a54b9](https://github.com/fafayzf/f-git/commit/96a54b9f8d8fea64588d339387432c142960dc6a))
+* add 'build, test, pref, refactor, revert' ([96a54b9](https://github.com/fafayzf/cg/commit/96a54b9f8d8fea64588d339387432c142960dc6a))
 
 
 
 
 
 
-# [0.3.0](https://github.com/fafayzf/f-git/compare/v0.2.2...v0.3.0) (2022-09-30)
-
-
-### Features
-
-* add @ff-git/commit ([0893f0b](https://github.com/fafayzf/f-git/commit/0893f0bcc4de2a89357cadab06cc72335586c85f))
-
-
-
-
-
-# [0.2.0](https://github.com/fafayzf/f-git/compare/v0.2.2...v0.2.0) (2022-09-30)
+# [0.3.0](https://github.com/fafayzf/cg/compare/v0.2.2...v0.3.0) (2022-09-30)
 
 
 ### Features
 
-* add @ff-git/commit ([0893f0b](https://github.com/fafayzf/f-git/commit/0893f0bcc4de2a89357cadab06cc72335586c85f))
+* add @fcg/commit ([0893f0b](https://github.com/fafayzf/cg/commit/0893f0bcc4de2a89357cadab06cc72335586c85f))
+
+
+
+
+
+# [0.2.0](https://github.com/fafayzf/cg/compare/v0.2.2...v0.2.0) (2022-09-30)
+
+
+### Features
+
+* add @fcg/commit ([0893f0b](https://github.com/fafayzf/cg/commit/0893f0bcc4de2a89357cadab06cc72335586c85f))
 
 
 
@@ -43,7 +73,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* add [@f-git](https://github.com/f-git)@pull @f-git/push ([61527e8](https://github.com/fafayzf/fafa-git/commit/61527e8389d54af27c2a6f1d7f97fdbefc7d907b))
+* add [@cg](https://github.com/cg)@pull @f-git/push ([61527e8](https://github.com/fafayzf/fafa-git/commit/61527e8389d54af27c2a6f1d7f97fdbefc7d907b))
 * add await to push, checkout ([255df10](https://github.com/fafayzf/fafa-git/commit/255df108294822ed13305237c0e6f548eb2b74ba))
 * bug ([721f553](https://github.com/fafayzf/fafa-git/commit/721f5538a4f584e8c22f71e7df2944c12df1fb4f))
 * but ([e09a34f](https://github.com/fafayzf/fafa-git/commit/e09a34fe40522f08f161f6b906bb4fcd4a1ed9a4))
