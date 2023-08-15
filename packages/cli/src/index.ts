@@ -13,69 +13,70 @@ program.version(pkg.version)
 // push
 program
   .command('ph')
-  .action(() => {
-    push()
+  .action(async () => {
+    await push()
   })
 
 program
   .command('push')
-  .action(() => {
-    push()
+  .action(async () => {
+    await push()
   })
 
 // pull
 program
   .command('pl')
-  .action(() => {
-    pull()
+  .action(async () => {
+    await pull()
   })
 
 program
   .command('pull')
-  .action(() => {
-    pull()
+  .action(async () => {
+    await pull()
   })
 
 // checkout
 program
   .command('ck [branch]')
-  .action((branch, options) => {
-    checkout(branch)
+  .action(async (branch, options) => {
+    await checkout(branch)
   })
 
 program
   .command('checkout [branch]')
-  .action((branch, options) => {
-    checkout(branch)
+  .action(async (branch, options) => {
+    await checkout(branch)
   })
 
 // commit
 program
   .command('cm')
-  .action(() => {
-    commit()
+  .action(async () => {
+    await commit()
   })
 
 program
   .command('commit')
-  .action(() => {
-    commit()
+  .action(async () => {
+    await commit()
   })
 
 // stash
 program
   .command('s [pop]')
-  .action((pop) => {
+  .action(async (pop) => {
     pop = pop === 'pop' || pop === 'p' ? 'pop' : undefined
-    stash(pop)
+    await stash(pop)
   })
 
 program
   .command('stash [pop]')
-  .action((pop) => {
+  .action(async (pop) => {
     pop = pop === 'pop' || pop === 'p' ? 'pop' : undefined
-    stash(pop)
+    await stash(pop)
   })
 
+program.parse(process.argv)
 
 export {}
