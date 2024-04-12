@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "../vitest.config.ts"
+  ],
+  "exclude": [
+    "**/__tests__/**"
+  ],
+}

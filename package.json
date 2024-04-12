@@ -1,8 +1,7 @@
 {
-  "name": "f-git",
+  "name": "fast-git",
   "version": "1.0.8",
   "description": "This is the git shortcut command package",
-  "private": true,
   "main": "./dist/node/index.js",
   "module": "./dist/node/index.js",
   "types": "./dist/types/index.d.ts",
@@ -19,18 +18,15 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "pnpm run -r --parallel build",
-    "pub": "pnpm build && bumpp -r && pnpm changelog && pnpm -r publish --no-git-checks",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "clean": "rimraf node_modules && pnpm run -r --parallel clean",
+    "dev": "swc ./src/index.ts -d dist -w",
     "test": "vitest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fafayzf/f-git.git"
+    "url": "https://github.com/fafayzf/fast-git.git"
   },
   "bin": {
-    "ff": "./index.ts"
+    "f": "./dist/index.js"
   },
   "keywords": [
     "git"
@@ -38,17 +34,18 @@
   "author": "fafayzf <fafayzf@163.com>",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.6",
-    "@types/color": "^3.0.3",
-    "@types/inquirer": "^9.0.3",
-    "@yzfu/libuild": "^1.0.6",
-    "bumpp": "^9.1.1",
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.4.13",
+    "@types/node": "^20.12.7",
+    "chokidar": "^3.6.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
   },
-  "homepage": "https://github.com/fafayzf/f-git#readme",
+  "homepage": "https://github.com/fafayzf/fast-git#readme",
   "bugs": {
-    "url": "https://github.com/fafayzf/f-git/issues"
+    "url": "https://github.com/fafayzf/fast-git/issues"
+  },
+  "dependencies": {
+    "@napi-rs/simple-git": "^0.1.16"
   }
 }
