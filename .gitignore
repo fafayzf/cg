@@ -1,3 +1,5 @@
 /node_modules
 stats.html
 .history
+dist
+pnpm-lock.yaml

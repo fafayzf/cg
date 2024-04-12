@@ -18,7 +18,8 @@
     "*.d.ts"
   ],
   "scripts": {
-    "dev": "swc ./src/index.ts -d dist -w",
+    "dev": "pnpm build -w",
+    "build": "swc ./src -o ./dist/index.js",
     "test": "vitest"
   },
   "repository": {
@@ -26,7 +27,7 @@
     "url": "https://github.com/fafayzf/fast-git.git"
   },
   "bin": {
-    "f": "./dist/index.js"
+    "f": "./bin/cli.js"
   },
   "keywords": [
     "git"

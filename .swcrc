@@ -1,3 +1,14 @@
 {
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false
+    },
+    "minify": {
+      "compress": true
+    }
+  },
+  "sourceMaps": true,
+  "inlineSourcesContent": true,
   "minify": true
 }
